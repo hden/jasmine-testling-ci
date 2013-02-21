@@ -1,0 +1,35 @@
+{
+  "name": "jasmine-testling-ci",
+  "version": "0.1.0",
+  "description": "example for running jasmine tests on ci.testling.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/jasmine-node --coffee spec/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hden/jasmine-testling-ci.git"
+  },
+  "keywords": [
+    "test"
+  ],
+  "testling": {
+    "browsers": {
+      "ie": [ 6, 7, 8, 9, 10 ],
+      "ff": [ 12, 13, 14, 15, 16, 17 ],
+      "chrome": [ 20, 21, 22, 23 ],
+      "opera": [ 10, 11, 12 ],
+      "safari": [ 5.1, 6 ],
+      "iphone": [ 6 ],
+      "ipad": [ 6 ]
+    },
+    "files": "jasmine-harness.coffee"
+  },
+  "author": "Hao-kang Den <haokang.den@gmail.com>",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "gitHead": "0d1c66e0d817c542f3406fd6257907e697e1e617",
+  "devDependencies": {
+    "jasmine-node": "~1.2.3"
+  }
+}
